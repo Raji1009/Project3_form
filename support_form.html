@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Form</title>
+</head>
+<body>
+
+    <h2>Support Form</h2>
+
+    <form action="submit_support_form.html" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="support_type">Type of Support Needed:</label><br>
+        <select id="support_type" name="support_type" required>
+            <option value="technical">Technical</option>
+            <option value="billing">Billing</option>
+            <option value="account">Account</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="product">Product/Service:</label><br>
+        <input type="text" id="product" name="product" required><br><br>
+
+        <label for="issue_date">Date of Issue:</label><br>
+        <input type="date" id="issue_date" name="issue_date" required><br><br>
+
+        <label for="issue_description">Issue Description:</label><br>
+        <textarea id="issue_description" name="issue_description" rows="4" required></textarea><br><br>
+
+        <label for="os">Operating System:</label><br>
+        <input type="text" id="os" name="os" required><br><br>
+
+        <label for="browser">Browser:</label><br>
+        <input type="text" id="browser" name="browser" required><br><br>
+
+        <label for="priority">Priority Level:</label><br>
+        <select id="priority" name="priority" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+
+        <label for="attachment">Attach File:</label><br>
+        <input type="file" id="attachment" name="attachment"><br><br>
+
+        <input type="submit" value="Submit Support Request">
+    </form>
+
+</body>
+</html>
